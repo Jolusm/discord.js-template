@@ -12,8 +12,9 @@ const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "DIREC
 const { MessageEmbed } = require('discord.js'); // Required for Embedded Messages
 
 //Config related
-const prefix = config.prefix // Bot prefix is '*'
 const config = require("./config.json") 
+const prefix = config.prefix // Bot prefix is '*'
+
 
 //Ready message 
 client.on('ready', () => {
